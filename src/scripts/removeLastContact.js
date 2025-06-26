@@ -5,11 +5,11 @@ export const removeLastContact = async () => {
     const contacts = await getAllContacts();
     if (contacts.length === 0) {
         console.log('No contacts to remove');
-        return contacts;
+        // return contacts;
     } else {
         contacts.length = contacts.length - 1;
         await writeContacts(contacts);
-        return contacts;
+        // return contacts;
     }
 };
 
